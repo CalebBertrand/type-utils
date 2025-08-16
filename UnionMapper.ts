@@ -1,8 +1,8 @@
 /**
     * Maps a union of types to a new union of types.
-    * @param TUnion - The union
-    * @param DiscriminatingKey - A key which is required to be common across all the subtypes in the union, and unique among them   
-    * @param TMapper - A mapper, which defines optional key mappings for any specified sub-types
+    * @param T - The union
+    * @param K - A key which is required to be common across all the subtypes in the union, and unique among them   
+    * @param Overrides - Defines optional key overrides for any specified sub-types
     *
     * Example use:
     * type IrNode = MapUnion<
